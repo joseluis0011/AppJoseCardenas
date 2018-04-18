@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_home">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="142dp"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="90dp"
+                android:text="Bienvenido"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="46dp"
+                android:onClick="mensaje"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="message_arrow.json"
+                app:lottie_imageAssetsFolder="typing_dot"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="104dp"
+                android:layout_height="99dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="62dp"
+                android:layout_marginTop="46dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="outline_user.json"
+                app:lottie_imageAssetsFolder="typing_dot"
+                app:lottie_loop="true"
+                android:onClick="contacto"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="93dp"
+                android:layout_height="103dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="88dp"
+                android:layout_marginStart="53dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="animated_graph.json"
+                app:lottie_imageAssetsFolder="typing_dot"
+                app:lottie_loop="true"
+                android:onClick="encuesta"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="101dp"
+                android:layout_height="105dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="88dp"
+                android:layout_marginEnd="54dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="done.json"
+                app:lottie_imageAssetsFolder="typing_dot"
+                app:lottie_loop="true"
+                android:onClick="cursos"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
